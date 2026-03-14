@@ -3,6 +3,7 @@
 ## Overview
 
 ```BERTGIN-EC``` is a multi-modal fusion method based on chemical language models and graph neural networks, designed to predict EC number classification of enzyme-catalyzed reactions. This method simultaneously utilizes SMILES sequence information of reactants and products as well as molecular graph structure information, achieving efficient enzyme classification prediction through various fusion strategies.
+BERTGIN-EC consists of three modules: the reaction SMILES sequence feature extraction module,  reaction graph feature extraction module,  feature fusion and prediction module.The reaction SMILES sequence feature extraction module employs a pre-trained BERT model to extract the 1D sequence features of reaction SMILES.The reaction graph feature extraction module uses a Graph Isomorphism Network (GIN) to extract the 2D graph structural features of the reaction.The feature fusion and prediction module fuses the bimodal features to predict and output the EC number.
 
 ## Description
 
