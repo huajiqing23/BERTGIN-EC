@@ -22,7 +22,8 @@ The project includes the following core files and directory structure:
 - The file `train.py` contains the script for testing the BERTGIN-EC model.
 - The file `train_ablation.py` contains the script for conducting the ablation study of BERTGIN-EC.
 
-The datasets after 5-fold cross-validation processing and the pre-trained models can be accessed via the following link: https://pan.baidu.com/s/1AeTamOZOdDfgRH7D_V6vNA?pwd=3us4.
+The datasets processed with 5-fold cross-validation and the trained models can be accessed [here](https://pan.baidu.com/s/1AeTamOZOdDfgRH7D_V6vNA?pwd=3us4).
+
 
 ## System Requirements
 
