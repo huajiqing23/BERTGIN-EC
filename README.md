@@ -14,19 +14,17 @@ The overall framework of ```BERTGIN-EC``` is shown in the following figure.
 ## Description
 
 The project includes the following core files and directory structure:
-- The file `multimodal_model.py` contains the definition of the multi-modal fusion model for BERTGIN-EC.
-- The file `train.py` contains the script for training the BERTGIN-EC model.
-- The file `test.py` contains the script for testing the BERTGIN-EC model.
-- The file `preprocess.py` contains the script for preprocessing the reaction data used in BERTGIN-EC.
-- The file `ablation_model.py` contains the definition of the ablation study model for BERTGIN-EC.
-- The file `train_ablation.py` contains the script for conducting the ablation study of BERTGIN-EC.
 - The folder `data/` contains the directory for storing the reaction data utilized in the training, testing and ablation study of BERTGIN-EC.
-
-
+- The file `ablation_model.py` contains the definition of the ablation study model for BERTGIN-EC.
+- The file `multimodal_model.py` contains the definition of the multi-modal fusion model for BERTGIN-EC.
+- The file `preprocess.py` contains the script for preprocessing the reaction data used in BERTGIN-EC.
+- The file `test.py` contains the script for training the BERTGIN-EC model.
+- The file `train.py` contains the script for testing the BERTGIN-EC model.
+- The file `train_ablation.py` contains the script for conducting the ablation study of BERTGIN-EC.
 
 ## System Requirements
 
-This project is developed based on the Python deep learning framework and requires the following environment dependencies:
+The proposed ```BERTGIN-EC``` has been implemented, trained, and tested by using `Python 3.8` and `PyTorch 2.1.0` with `CUDA 12.1` and an `NVIDIA RTX4090` graphics card.
 
 ```
 Python
