@@ -48,39 +48,18 @@ scipy:  1.15.2
 
 ### Datasets
 
-The datasets are also available in other sources https://github.com/rxn4chemistry/biocatalysis-model/tree/main/data
+The dataset of enzyme-catalyzed reactions containing 62,000 biological reactions and their corresponding enzyme EC numbers extracted from four databases (Rhea, BRENDA, PathBank, MetaNetX) is available [here](https://github.com/rxn4chemistry/biocatalysis-model/tree/main/data).
 
 ### Model Training
+We define the multimodal model for the **BERTGIN-EC** method in the file `multimodal_model.py`, where:
+- The sequence feature extraction module is implemented based on the pre-trained model ChemBERTa.
+- The graph feature extraction module is implemented based on the Graph Isomorphism Network (GIN).
 
-```bash
-python train.py
-```
+Multi-dimensional features are extracted separately from reaction SMILES and molecular structures. The pre-trained ChemBERTa model is available at [seyonec/ChemBERTa_zinc250k_v2_40k](https://huggingface.co/seyonec/ChemBERTa_zinc250k_v2_40k).
 
-Training parameters can be modified in `train.py`:
+The model can be trained using the file `train.py`, and then tested using the file `test.py`.
 
-```python
-params = {
-    'Epoch': 40,              # Number of training epochs
-    'batch_size': 64,         # Batch size
-    'local_model_path': "/path/to/chemberta",  # ChemBERTa model path
-    'fusion_type': "attention",  # Fusion type: concat/sum/attention
-    'head_type': "mlp",       # Classification head type: simple/mlp
-    'gnn_type': "gin"         # GNN type: gcn/gat/gin
-}
-```
-Modify GNN Architecture
 
-Modify the `GraphFeatureExtractor` parameters in `multimodal_model.py`:
-
-```python
-self.graph_extractor = GraphFeatureExtractor(
-    in_channels=8,          # Input feature dimension
-    hidden_channels=        # Hidden layer dimension
-    out_channels=           # Output feature dimension
-    num_layers=3,           # Number of GNN layers
-    gnn_type="gin"          # GNN type: gcn/gat/gin
-)
-```
 
 
 ### Model Testing
