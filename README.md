@@ -13,10 +13,8 @@ The overall framework of ```BERTGIN-EC``` is shown in the following figure.
 
 ## Description
 
-This project proposes an innovative multi-modal fusion framework that combines the ChemBERTa chemical language model and graph neural networks to predict EC numbers of enzyme-catalyzed reactions. The method leverages SMILES sequence information of reactants and products along with molecular graph structure information, achieving efficient enzyme classification prediction through various fusion strategies.
-
 The project includes the following core files and directory structure:
-- `multimodal_model.py` — Multi-modal fusion model definition
+- The file 'multimodal_model.py' contains the definition of the multi-modal fusion model for BERTGIN-EC.
 - `train.py` — Model training script
 - `test.py` — Model testing script
 - `preprocess.py` — Data preprocessing script
