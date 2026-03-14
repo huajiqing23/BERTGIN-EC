@@ -8,6 +8,8 @@
 
 The overall framework of ```BERTGIN-EC``` is shown in the following figure.
 
+![BERTGIN-EC Model Architecture](https://github.com/huajiqing23/BERTGIN-EC/blob/main/Model%20Architecture.png)
+
 
 ## Description
 
