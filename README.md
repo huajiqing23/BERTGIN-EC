@@ -14,7 +14,7 @@ The overall framework of ```BERTGIN-EC``` is shown in the following figure.
 ## Description
 
 The project includes the following core files and directory structure:
-- The folder `data/` contains the directory for storing the reaction data utilized in the training, testing and ablation study of BERTGIN-EC.
+- The folder `data/` contains the directory for storing the raw reaction data utilized in the training, testing and ablation study of BERTGIN-EC.
 - The file `ablation_model.py` contains the definition of the ablation study model for BERTGIN-EC.
 - The file `multimodal_model.py` contains the definition of the multi-modal fusion model for BERTGIN-EC.
 - The file `preprocess.py` contains the script for preprocessing the reaction data used in BERTGIN-EC.
